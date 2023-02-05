@@ -4,39 +4,36 @@ public class ArrayTwoD {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enterg m rows");
+        System.out.println("Enter m rows: ");
         int M = scan.nextInt();
-        System.out.println("Enterg n coloums");
+        System.out.println("Enter n columns: ");
         int N = scan.nextInt();
-        int arr[][] = new int[M][N];
-        boolean ar[][] = new boolean[M][N];
-        double arrr[][] = new double[M][N];
+        int arrayFirst[][] = new int[M][N];
+        boolean arraySec[][] = new boolean[M][N];
+        double arrayThird[][] = new double[M][N];
         for (int i = 0; i < M; i++) {
             for (int j = 0; j < N; j++) {
-                arr[i][j] = scan.nextInt();
+                arrayFirst[i][j] = scan.nextInt();
             }
         }
-        System.out.println(arr);
-        //Utility.PrintArr(arr);
+        System.out.println(arrayFirst);
 
-        System.out.println(" enter boolean arrya");
-
-        for (int i = 0; i < M; i++) {
-            for (int j = 0; j < N; j++) {
-                ar[i][j] = scan.nextBoolean();
-            }
-        }
-        //Utility.PrintArr(ar);
-        System.out.println(ar);
-        System.out.println(" enter double arrya");
+        System.out.println(" Enter boolean array: ");
 
         for (int i = 0; i < M; i++) {
             for (int j = 0; j < N; j++) {
-                arrr[i][j] = scan.nextDouble();
+                arraySec[i][j] = scan.nextBoolean();
             }
         }
-        //Utility.PrintArr(arrr);
-        System.out.println(arrr);
+        System.out.println(arraySec);
+        System.out.println(" Enter double array: ");
+
+        for (int i = 0; i < M; i++) {
+            for (int j = 0; j < N; j++) {
+                arrayThird[i][j] = scan.nextDouble();
+            }
+        }
+        System.out.println(arrayThird);
         scan.close();
     }
 }

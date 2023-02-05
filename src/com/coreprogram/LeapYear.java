@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class LeapYear {
     public static void main(String[] args) {
         int year;
-        System.out.println("Enter an Year :: ");
+        System.out.println("Enter a year : ");
         Scanner sc = new Scanner(System.in);
         year = sc.nextInt();
         while(year < 999 || year > 9999){

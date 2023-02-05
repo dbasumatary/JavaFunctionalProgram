@@ -8,7 +8,7 @@ public class PrimeFactors {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter a number: ");
         number = scan.nextInt();
-        //System.out.println("The prime factors of " + number + " are : ");
+
         if(number == 2 || number == 1){
             System.out.println("Enter numbers greater than 2");
             number = scan.nextInt();

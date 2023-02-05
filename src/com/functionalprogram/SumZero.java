@@ -24,7 +24,6 @@ public class SumZero {
             System.out.println(" not exist ");
     }
 
-    // Driver code
     public static void main(String[] args)
     {
 
