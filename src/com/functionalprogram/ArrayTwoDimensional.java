@@ -1,8 +1,7 @@
 package com.functionalprogram;
 import java.util.Scanner;
-public class ArrayTwoD {
+public class ArrayTwoDimensional {
     public static void main(String[] args) {
-
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter m rows: ");
         int M = scan.nextInt();
@@ -17,9 +16,7 @@ public class ArrayTwoD {
             }
         }
         System.out.println(arrayFirst);
-
         System.out.println(" Enter boolean array: ");
-
         for (int i = 0; i < M; i++) {
             for (int j = 0; j < N; j++) {
                 arraySec[i][j] = scan.nextBoolean();
@@ -27,7 +24,6 @@ public class ArrayTwoD {
         }
         System.out.println(arraySec);
         System.out.println(" Enter double array: ");
-
         for (int i = 0; i < M; i++) {
             for (int j = 0; j < N; j++) {
                 arrayThird[i][j] = scan.nextDouble();

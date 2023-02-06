@@ -1,25 +1,20 @@
 package com.coreprogram;
-
 import java.util.Scanner;
-
+/*Program to find the largest among three numbers*/
 public class LargestThree {
     public static void main(String[] args) {
-
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter first number: ");
-        int first = scan.nextInt();
-        System.out.println("Enter second number: ");
-        int second = scan.nextInt();
-        System.out.println("Enter third number: ");
-        int third = scan.nextInt();
-
-        if( first >= second && first >= third)
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the first number: ");
+        int first = scanner.nextInt();
+        System.out.print("Enter the second number: ");
+        int second = scanner.nextInt();
+        System.out.print("Enter the third number: ");
+        int third = scanner.nextInt();
+        if( first >= second && first >= third)                                         //First is larger than both
             System.out.println("The largest number among the three is " + first);
-
-        else if (second >= first && second >= third)
+        else if (second >= first && second >= third)                                   //Second is larger than both
             System.out.println("The largest number among the three is " + second);
-
-        else
+        else                                                                           //Third is the largest
             System.out.println("The largest number among the three is " + third);
     }
 }

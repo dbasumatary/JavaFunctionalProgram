@@ -1,19 +1,16 @@
 package com.coreprogram;
-import java.lang.System;
 import java.util.Scanner;
-
+/*Program to print the nth harmonic number*/
 public class HarmonicNumber {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter value of n: ");
-        double num = scan.nextDouble();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter value of n: ");                    //Value of n for harmonic oscillator
+        double number = scanner.nextDouble();
         double sum = 0.0;
-        System.out.println("The Harmonic series is : ");
-
-        for (double i = 1; i <= num; i++){
-            sum = sum + 1/i;
-            System.out.println(sum);
+        System.out.print("The Harmonic series is : ");
+        for (double i = 1; i <= number; i++){
+            sum = sum + 1/i;                                        //The harmonic no. is stored in sum
+            System.out.print(sum + "  ");
         }
     }
 }
-

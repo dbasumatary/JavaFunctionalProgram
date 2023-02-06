@@ -1,32 +1,27 @@
 package com.coreprogram;
-
 import java.util.Scanner;
-
+/*Program to flip coin and print percentage of head and tail*/
 public class CoinPercentage {
-
-
     public static void main(String[] args) {
-        System.out.println("Enter positive integer: ");
-        Scanner scan = new Scanner(System.in);
-        int n  = scan.nextInt();
+        System.out.print("Enter positive integer: ");               //No. of timed to flip the coin
+        Scanner scanner = new Scanner(System.in);
+        int number  = scanner.nextInt();
         double heads = 0;
         double tails = 0;
-        double headspercent;
-        double tailspercent;
-
-        for(int i = 0; i <= n; i++){
+        double headsPercent;
+        double tailsPercent;
+        for(int i = 0; i <= number; i++){
             double coin = Math.random();
-
-            if (coin < 0.5){
+            if (coin < 0.5){                                          //Checking for coin using random
                 heads+=1;
             }
             else{
                 tails+=1;
             }
         }
-        headspercent = (heads * 100)/n;
-        System.out.println("Percentage of heads is : " + headspercent);
-        tailspercent = 100 - headspercent;
-        System.out.println("Percentage of tails is : " + tailspercent);
+        headsPercent = (heads * 100)/number;
+        System.out.println("Percentage of heads is : " + headsPercent);
+        tailsPercent = 100 - headsPercent;
+        System.out.println("Percentage of tails is : " + tailsPercent);
     }
 }
